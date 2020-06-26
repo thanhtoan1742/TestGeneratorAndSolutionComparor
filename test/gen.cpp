@@ -1,5 +1,8 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main() {
-    std::cout << rand() << '\n'; 
+    srand(time(NULL));
+    cout << rand() % 10 + 1;
 }
