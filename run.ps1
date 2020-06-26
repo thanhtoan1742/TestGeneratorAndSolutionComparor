@@ -62,8 +62,8 @@ if ($run_solution_executable -eq 1) {
 
 
 if ($compare_solution_result -eq 1) {
-    $solution_folder = get-childItem -path ".\solution\" -directory
-    write-host $solution_folder
+    $solution_folder = @(get-childItem -path ".\solution\" -directory)
+    write-output $solution_folder
     for ($i = 0; $i -lt $solution_folder.length; $i++) {
         $solution_folder[$i] = ".\solution\" + $solution_folder[$i]
     }
@@ -78,11 +78,11 @@ if ($compare_solution_result -eq 1) {
                     $sim = $v;
                     break
                 }
-                # write-host ($u.toString() + " " + $v.toString());
+                # write-output ($u.toString() + " " + $v.toString());
             }
             $result = $result + " " + $sim.toString()
-            # write-host $result
+            # write-output $result
         }
-        write-host $result
+        write-output $result
     }
 }
