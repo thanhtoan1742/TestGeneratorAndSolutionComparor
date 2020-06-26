@@ -26,7 +26,7 @@ Check the file `gen.cpp` in folder `.\test` if you want an example.
 The solution read from file and write to standard out stream.  
 The input file name should be the first command argument passed to the solution (common denoted as `argv[1]` in **C++**). Please check the **C++** files in `.\solution` folder for an example.
 
-There are 4 variable in the `TGSC.ps1` , together they determine the behavior of the program. 
+There are 6 variable in the `TGSC.ps1` , together they determine the behavior of the program. 
 * **`$generate_test`**
 If the value of the variable is 1, the test generator will be run.  
 The tests are created and placed in the `.\test` folder. They are named by their number in `.inp`  extension.  
