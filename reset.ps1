@@ -1,3 +1,4 @@
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 cd .\solution
 $solution_list = get-childitem -recurse -file -name -filter "*.cpp"
 foreach ($solution in $solution_list) {

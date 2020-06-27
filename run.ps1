@@ -1,5 +1,6 @@
 # TODO:
 # run with test_gen executable and solution executable
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 if ($generate_test -eq 1) {
     set-location .\test\
